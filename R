@@ -1,0 +1,21 @@
+makeCacheMatrix <- function(x = matrix()) {  ## Writting functions that cache the inverse of a matrix
+m <- NULL
+        set <- function(y) {
+                x <<- y
+                m <<- NULL
+        }
+        get <- function() x
+        setmean <- function(mean) m <<- mean
+        getmean <- function() m
+        list(set = set, get = get,
+             setmean = setmean,
+             getmean = getmean)
+}
+}
+
+
+## ## Creating a new matrix that computes the inverse of the special matrix
+
+cacheSolve <- function(x, ...) {
+        ## Return a matrix that is the inverse of 'x'
+}
